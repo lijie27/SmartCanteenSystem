@@ -1,0 +1,64 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Orders</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="light-bg" padding>
+  <div class="card light-bg" margin-top *ngFor="let order of orders; let orderIndex = index">
+    <div class="card-header" padding>
+      <div>
+        <span>Order Id: {{ order.orderNumber }}</span>
+        <ion-badge color="{{ order.status }}">{{ order.status }}</ion-badge>
+      </div>
+      <div>Order Time: {{ order.createdAt | date: 'y/MM/d H:mm'}}</div>
+    </div>
+
+    <ion-list class="list-full-border" no-margin>
+      <ion-item class="product" *ngFor="let item of order.items; let i = index">
+        <ion-thumbnail item-left>
+          <img src="{{ item.thumbnail }}">
+        </ion-thumbnail>
+        <!--item's information-->
+        <div>
+          <div text-wrap>{{ item.name }}</div>
+          <span class="text-sm" *ngFor="let variation of item.variations, let i = index">
+            <span ion-text color="light-dark" *ngIf="i > 0">,</span>
+            <span ion-text color="light-dark">{{ variation.name }}</span>
+          </span>
+          <div class="text-sm" *ngIf="item.size">
+            <span ion-text color="light-dark">{{ item.size.name }}</span>
+          </div>
+          <div padding-bottom>
+            <span class="pull-right">${{ item.price }} x {{ item.quantity }}</span>
+            <div class="clear"></div>
+          </div>
+        </div>
+
+      </ion-item>
+    </ion-list>
+
+    <div class="card-footer" padding>
+      <div>
+        <span class="pull-left" ion-text color="light-dark">Total</span>
+        <span class="pull-right bold" ion-text color="danger">${{ order.total }}</span>
+        <div class="clear"></div>
+      </div>
+
+      <!-- Go to order review page -->
+      <!--<button ion-button block (click)="review(order)" *ngIf="order.status == 'complete' && !order.isReviewed">Review</button>-->
+    </div>
+  </div>
+</ion-content>
