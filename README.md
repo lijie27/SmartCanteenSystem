@@ -1,5 +1,4 @@
-##How to setup Firebase food order app
-
+##How to setup Smart Canteen System
 
 ###System requirements
  `npm` version from 5.7.1 and `node` from 8.10.0
@@ -140,16 +139,6 @@ Or run it in your device with:
 ```
 ionic cordova run android
 ```
-
-
-###About me
-My name is Dao Duy Thanh. I'm a full stack developer (PHP + frontend).
-
-View my apps at: [http://market.ionic.io/user/231798](http://market.ionic.io/user/231798)
-
-View my Youtube channel at: [https://www.youtube.com/channel/UCgqx9-AWwoj5Z3i6U3slQ_w](https://www.youtube.com/channel/UCgqx9-AWwoj5Z3i6U3slQ_w)
-
-Contact me by email: **successdt@hotmail.com**
 
 ###References
 
