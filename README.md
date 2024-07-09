@@ -1,16 +1,16 @@
 The Smart Canteen System is an innovative web and mobile application designed to streamline canteen operations and enhance the customer experience. 
 Built with TypeScript, HTML, SCSS, JavaScript, Ionic and Firebase, the system offers a comprehensive suite of features for both stall owners and customers.
 
-**For Stall Owners:**
-**CRUD Menu:** Easily create, read, update, and delete menu items.
-**Sales Analysis: **Access detailed sales analytics to make informed business decisions.
-**Order Management: **Receive and manage orders efficiently.
-**Report Generation:** Generate comprehensive reports to track performance.
+For Stall Owners:
+CRUD Menu: Easily create, read, update, and delete menu items.
+Sales Analysis: Access detailed sales analytics to make informed business decisions.
+Order Management: Receive and manage orders efficiently.
+Report Generation: Generate comprehensive reports to track performance.
 
-**For Customers:**
-**Order Food:** Browse and order food from various categories with ease.
-**Customize Orders:** Personalize orders to suit individual preferences.
-**Chat with Stalls:** Communicate directly with stall owners for any queries or special requests.
+For Customers:
+Order Food: Browse and order food from various categories with ease.
+Customize Orders: Personalize orders to suit individual preferences.
+Chat with Stalls: Communicate directly with stall owners for any queries or special requests.
 
 --------------------------------------------------------------------------------------------------------
 ##How to setup Smart Canteen System
